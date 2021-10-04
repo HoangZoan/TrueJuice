@@ -15,6 +15,13 @@ body {
   font-family: "Lato", sans-serif;
   font-weight: 400; }
 
+.heading-primary {
+  font-size: 6rem;
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  line-height: 1.6;
+  letter-spacing: 3px; }
+
 .btn:link,
 .btn:visited {
   display: block;
@@ -24,22 +31,32 @@ body {
   border-radius: 2px;
   transition: all 0.2s; }
 
-.btn--sign-up {
+.btn--sub {
   border: 2px solid #78e08f; }
 
-.btn--log-in {
+.btn--primary {
   background-color: #78e08f; }
 
-.btn--sign-up:hover {
+.btn--sub:hover {
   background-color: #53cd6e;
   border: 2px solid #53cd6e;
   color: #fff; }
 
-.btn--log-in:hover {
+.btn--primary:hover {
   background-color: #53cd6e; }
+
+.btn.btn--plans {
+  background-color: #53cd6e;
+  padding: 1.2rem 2.4rem; }
+
+.btn.btn--plans:hover {
+  padding: 1.2rem 3.6rem; }
 
 .margin-r-sm {
   margin-right: 1.6rem; }
+
+.margin-b-lg {
+  margin-bottom: 3.6rem; }
 
 .header-navigation {
   width: 100%;
@@ -101,3 +118,22 @@ body {
 .login-box {
   margin-right: 2.4rem;
   display: flex; }
+
+.hero {
+  height: calc(100vh - 64px);
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../img/hero.jpg);
+  background-size: cover;
+  background-position: bottom;
+  color: #fff; }
+  .hero__container {
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 12rem 0; }
+  .hero__description {
+    font-size: 2rem;
+    letter-spacing: 0.8px; }
+  .hero__cta {
+    margin-top: 10rem;
+    display: flex;
+    font-size: 1.6rem; }

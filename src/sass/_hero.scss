@@ -1,3 +1,5 @@
+// Header
+
 .header-navigation {
   width: 100%;
   display: flex;
@@ -23,10 +25,6 @@
     display: flex;
     margin-right: 1.2rem;
   }
-
-  //   &__item:not(:last-child) {
-  //     margin-right: 3.2rem;
-  //   }
 
   &__link {
     &:link,
@@ -80,4 +78,33 @@
 .login-box {
   margin-right: 2.4rem;
   display: flex;
+}
+
+// Hero
+
+.hero {
+  height: calc(100vh - 64px);
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+    url(../img/hero.jpg);
+  background-size: cover;
+  background-position: bottom;
+  color: #fff;
+
+  &__container {
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 12rem 0;
+  }
+
+  &__description {
+    font-size: 2rem;
+    letter-spacing: 0.8px;
+  }
+
+  &__cta {
+    margin-top: 10rem;
+    display: flex;
+    font-size: 1.6rem;
+  }
 }
