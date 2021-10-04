@@ -1,3 +1,72 @@
+// - Font sizes (px)
+
+// 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44
+
+// 52 / 62 / 74 / 86 / 98
+
+// - Spacing system (px)
+
+// 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 120
+
+$color-primary: #78e08f;
+$color-primary-light: #a5efb5;
+$color-primary-dark: #53cd6e;
+
+$text-color: #555;
+
+$font-display: "Lato", sans-serif;
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
 body {
-  color: green;
+  font-size: 1.6rem;
+  color: $text-color;
+  font-family: $font-display;
+  font-weight: 400;
+}
+
+.btn:link,
+.btn:visited {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  padding: 1rem 2rem;
+  border-radius: 2px;
+  transition: all 0.2s;
+}
+
+.btn--sign-up {
+  border: 2px solid $color-primary;
+}
+
+.btn--log-in {
+  background-color: $color-primary;
+}
+
+.btn--sign-up:hover {
+  background-color: $color-primary-dark;
+  border: 2px solid $color-primary-dark;
+  color: #fff;
+}
+
+.btn--log-in:hover {
+  background-color: $color-primary-dark;
+}
+
+///////////////////////////////
+// UTILITIES
+
+.margin-r-sm {
+  margin-right: 1.6rem;
 }

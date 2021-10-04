@@ -1,0 +1,74 @@
+.header-navigation {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 1px 3px rgba(#000, 0.1);
+}
+
+.logo {
+  width: 20rem;
+  height: auto;
+  margin-left: 2.4rem;
+  margin-right: auto;
+}
+
+.nav {
+  &__list {
+    list-style: none;
+    display: flex;
+    margin-right: 2.4rem;
+  }
+
+  &__item {
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 3.2rem;
+  }
+
+  &__link {
+    &:link,
+    &:visited {
+      position: relative;
+      display: inline-block;
+      text-decoration: none;
+      color: inherit;
+      font-size: 1.6rem;
+      text-transform: uppercase;
+      padding: 1rem 1.8rem;
+      margin: 1.2rem 0;
+      border-radius: 3px;
+
+      transition: all 0.2s;
+    }
+
+    &::after {
+      content: "";
+      width: 0;
+      height: 2px;
+      background-color: $color-primary-dark;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      transition: all 0.2s;
+    }
+  }
+
+  &__link:hover {
+    color: $color-primary-dark;
+    transform: translateY(-3px);
+  }
+
+  &__link:hover::after {
+    transform: translateY(3px);
+    width: 80%;
+    // transform: translateX(0);
+    left: 10%;
+  }
+}
+
+.login-box {
+  margin-right: 2.4rem;
+  display: flex;
+}
