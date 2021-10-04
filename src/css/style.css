@@ -20,7 +20,7 @@ body {
   display: block;
   text-decoration: none;
   color: inherit;
-  padding: 1rem 2rem;
+  padding: 0.8rem 1.4rem;
   border-radius: 2px;
   transition: all 0.2s; }
 
@@ -47,19 +47,18 @@ body {
   align-items: center;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); }
 
-.logo {
+.logo__link {
+  margin-right: auto; }
+
+.logo__img {
   width: 20rem;
   height: auto;
-  margin-left: 2.4rem;
-  margin-right: auto; }
+  margin-left: 2.4rem; }
 
 .nav__list {
   list-style: none;
   display: flex;
-  margin-right: 2.4rem; }
-
-.nav__item:not(:last-child) {
-  margin-right: 3.2rem; }
+  margin-right: 1.2rem; }
 
 .nav__link:link, .nav__link:visited {
   position: relative;
@@ -68,7 +67,7 @@ body {
   color: inherit;
   font-size: 1.6rem;
   text-transform: uppercase;
-  padding: 1rem 1.8rem;
+  padding: 1rem 3rem;
   margin: 1.2rem 0;
   border-radius: 3px;
   transition: all 0.2s; }
@@ -90,8 +89,14 @@ body {
 
 .nav__link:hover::after {
   transform: translateY(3px);
-  width: 80%;
-  left: 10%; }
+  width: 70%;
+  left: 15%; }
+
+.v-border {
+  height: 50px;
+  width: 2px;
+  background-color: #78e08f;
+  margin-right: 3.2rem; }
 
 .login-box {
   margin-right: 2.4rem;

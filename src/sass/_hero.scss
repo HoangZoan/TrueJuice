@@ -6,25 +6,27 @@
 }
 
 .logo {
-  width: 20rem;
-  height: auto;
-  margin-left: 2.4rem;
-  margin-right: auto;
+  &__link {
+    margin-right: auto;
+  }
+
+  &__img {
+    width: 20rem;
+    height: auto;
+    margin-left: 2.4rem;
+  }
 }
 
 .nav {
   &__list {
     list-style: none;
     display: flex;
-    margin-right: 2.4rem;
+    margin-right: 1.2rem;
   }
 
-  &__item {
-  }
-
-  &__item:not(:last-child) {
-    margin-right: 3.2rem;
-  }
+  //   &__item:not(:last-child) {
+  //     margin-right: 3.2rem;
+  //   }
 
   &__link {
     &:link,
@@ -35,7 +37,7 @@
       color: inherit;
       font-size: 1.6rem;
       text-transform: uppercase;
-      padding: 1rem 1.8rem;
+      padding: 1rem 3rem;
       margin: 1.2rem 0;
       border-radius: 3px;
 
@@ -62,10 +64,17 @@
 
   &__link:hover::after {
     transform: translateY(3px);
-    width: 80%;
+    width: 70%;
     // transform: translateX(0);
-    left: 10%;
+    left: 15%;
   }
+}
+
+.v-border {
+  height: 50px;
+  width: 2px;
+  background-color: $color-primary;
+  margin-right: 3.2rem;
 }
 
 .login-box {
