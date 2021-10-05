@@ -35,7 +35,10 @@ body {
   color: $text-color;
   font-family: $font-display;
   font-weight: 400;
+  line-height: 1.6;
 }
+
+// Heading - Paragraph
 
 .heading-primary {
   font-size: 6rem;
@@ -43,7 +46,37 @@ body {
   font-weight: 400;
   line-height: 1.6;
   letter-spacing: 3px;
+  text-transform: uppercase;
 }
+
+.heading-secondary {
+  font-family: $font-primary;
+  font-weight: 600;
+  line-height: 1.6;
+  font-size: 3.2rem;
+  text-transform: uppercase;
+  letter-spacing: 1.6px;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 110%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 20%;
+    height: 1px;
+    background-color: $color-primary;
+  }
+}
+
+.paragraph {
+  &:not(:last-child) {
+    margin-bottom: 1.2rem;
+  }
+}
+
+// Button
 
 .btn:link,
 .btn:visited {
@@ -57,38 +90,71 @@ body {
 
 .btn--sub {
   border: 2px solid $color-primary;
+
+  &:hover {
+    background-color: $color-primary-dark;
+    border: 2px solid $color-primary-dark;
+    color: #fff;
+  }
 }
 
 .btn--primary {
   background-color: $color-primary;
-}
 
-.btn--sub:hover {
-  background-color: $color-primary-dark;
-  border: 2px solid $color-primary-dark;
-  color: #fff;
-}
-
-.btn--primary:hover {
-  background-color: $color-primary-dark;
+  &:hover {
+    background-color: $color-primary-dark;
+  }
 }
 
 .btn.btn--plans {
   background-color: $color-primary-dark;
   padding: 1.2rem 2.4rem;
+
+  &:hover {
+    padding: 1.2rem 3.6rem;
+  }
 }
 
-.btn.btn--plans:hover {
-  padding: 1.2rem 3.6rem;
+// Link
+
+.small-link {
+  &:link,
+  &:visited {
+    align-self: flex-end;
+    text-decoration: none;
+    color: $color-primary;
+    border-bottom: 1px solid $color-primary;
+    transition: all 0.2s;
+  }
+
+  &:hover,
+  &:active {
+    transform: translateY(-3px);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+  }
 }
 
 ///////////////////////////////
 // UTILITIES
 
+// Margin
 .margin-r-sm {
   margin-right: 1.6rem;
 }
 
-.margin-b-lg {
+.margin-b-sm {
+  margin-bottom: 1.2rem;
+}
+
+.margin-b-md {
   margin-bottom: 3.6rem;
+}
+
+.margin-b-big {
+  margin-bottom: 9rem;
+}
+
+// Text
+.center-text {
+  text-align: center;
 }
