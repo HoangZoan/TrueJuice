@@ -12,6 +12,9 @@ $color-primary: #78e08f;
 $color-primary-light: #a5efb5;
 $color-primary-dark: #53cd6e;
 
+$color-grey-light-1: #f4fdf6;
+$color-grey-light-2: #f6f6f6;
+
 $text-color: #555;
 
 $font-display: "Lato", sans-serif;
@@ -51,7 +54,7 @@ body {
 
 .heading-secondary {
   font-family: $font-primary;
-  font-weight: 600;
+  font-weight: 400;
   line-height: 1.6;
   font-size: 3.2rem;
   text-transform: uppercase;
@@ -136,6 +139,11 @@ body {
 
 ///////////////////////////////
 // UTILITIES
+
+// Hidden
+.hidden {
+  display: hidden;
+}
 
 // Margin
 .margin-r-sm {

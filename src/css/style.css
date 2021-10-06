@@ -26,7 +26,7 @@ body {
 
 .heading-secondary {
   font-family: "Playfair Display", serif;
-  font-weight: 600;
+  font-weight: 400;
   line-height: 1.6;
   font-size: 3.2rem;
   text-transform: uppercase;
@@ -82,6 +82,9 @@ body {
 .small-link:hover, .small-link:active {
   transform: translateY(-3px);
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15); }
+
+.hidden {
+  display: hidden; }
 
 .margin-r-sm {
   margin-right: 1.6rem; }
@@ -191,17 +194,16 @@ body {
   row-gap: 3.2rem;
   grid-auto-flow: column dense; }
   .intro:not(:last-child) {
-    margin-bottom: 2.4rem; }
+    margin-bottom: 3.6rem; }
   .intro:nth-child(odd) {
-    background-color: #fafefb;
-    padding: 2.4rem 0;
+    background-color: #f4fdf6;
     grid-template-columns: 2fr 3.5fr; }
     .intro:nth-child(odd) :first-child {
       grid-column: 2 / 3; }
   .intro__column {
     display: flex;
     flex-direction: column;
-    padding: 4.8rem 0; }
+    padding: 4.8rem 1.8rem; }
   .intro__heading {
     font-size: 2.4rem;
     font-weight: 700;
@@ -216,3 +218,61 @@ body {
     margin-right: 1.2rem; }
   .intro__img {
     width: 100%; }
+
+.section-testimonials {
+  background-color: #f6f6f6; }
+
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 12rem 0; }
+
+.testimonials {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  column-gap: 2.4rem; }
+  .testimonials__figure {
+    position: relative; }
+  .testimonials__img {
+    width: 100%;
+    display: block; }
+  .testimonials__caption {
+    font-size: 1.8rem;
+    padding: 3.6rem 4.8rem;
+    color: #fff;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)); }
+  .testimonials__right-col {
+    display: grid;
+    row-gap: 3.2rem; }
+  .testimonials__right-col .small-link {
+    justify-self: center; }
+  .testimonials__card {
+    padding: 2rem 3.2rem;
+    background-color: #fff;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+    border-radius: 3px;
+    background-image: linear-gradient(120deg, #fff 0%, #fff 50%, #f4fdf6 50%);
+    background-size: 225%;
+    transition: all 0.5s; }
+    .testimonials__card.active {
+      background-position: 100%;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+      transform: translateY(-3px); }
+    .testimonials__card .customer__box {
+      margin-top: 2.8rem;
+      display: grid;
+      grid-template-columns: 7.2rem 1fr;
+      font-size: 1.2rem;
+      row-gap: 0.5rem; }
+    .testimonials__card .customer__img {
+      height: 5.4rem;
+      width: 5.4rem;
+      grid-row: 1 / span 2; }
+    .testimonials__card .customer__name {
+      line-height: 1;
+      align-self: end; }
+    .testimonials__card .customer__title {
+      align-self: start; }
