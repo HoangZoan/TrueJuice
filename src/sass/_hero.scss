@@ -89,7 +89,7 @@
     url(../img/hero.jpg);
   background-size: cover;
   background-position: bottom;
-  color: #fff;
+  color: $text-color-white;
 
   &__container {
     max-width: 120rem;
