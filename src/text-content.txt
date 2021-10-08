@@ -68,7 +68,7 @@ màu sắc của sản phẩm, và cuối cùng đến vị giác!"
 
 #1 Khởi nguồn True Juice - Lan tỏa điều tốt đẹp
 #2 Hành trình của chai Juice
-#3 10000juicingstories
+#3 #10000juicingstories
 #4 Juice Magazine
 
 

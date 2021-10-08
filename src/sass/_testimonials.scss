@@ -14,9 +14,6 @@
   column-gap: 2.4rem;
 
   // Left Column
-  &__left-col {
-  }
-
   &__figure {
     position: relative;
   }
@@ -42,17 +39,9 @@
 
   // Right Column
   &__right-col {
-    // padding: 3.2rem;
     display: grid;
     row-gap: 3.2rem;
   }
-
-  // &__right-col activated {
-  //   background-position: 100% !important;
-  //   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15) !important;
-  //   transform: translateY(-3px) !important;
-  // }
-
   &__right-col .small-link {
     justify-self: center;
   }
