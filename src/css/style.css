@@ -67,7 +67,7 @@ body {
 .btn.btn--primary {
   background-color: #78e08f; }
   .btn.btn--primary:hover {
-    background-color: #53cd6e; }
+    background-color: #a1eab1; }
 
 .btn.btn--plans {
   background-color: #53cd6e;
@@ -103,6 +103,35 @@ body {
 
 .center-text {
   text-align: center; }
+
+.footer {
+  margin-bottom: 12rem; }
+  .footer__container {
+    max-width: 120rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .footer__logo {
+    height: 8rem;
+    width: auto;
+    margin-bottom: 2.4rem; }
+  .footer__text {
+    margin-bottom: 8rem; }
+
+.footer-info {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1.5fr repeat(3, 1fr);
+  justify-items: center; }
+  .footer-info__heading {
+    font-size: 1.8rem;
+    text-transform: uppercase; }
+  .footer-info__list {
+    list-style: none; }
+  .footer-info__social {
+    height: 2.4rem;
+    width: 2.4rem; }
 
 .header-navigation {
   width: 100%;

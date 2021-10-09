@@ -11,6 +11,7 @@
 $color-primary: #78e08f;
 $color-primary-light: #a5efb5;
 $color-primary-light-1: #cbf3d4;
+$color-primary-light-2: #a1eab1;
 $color-primary-dark: #53cd6e;
 
 $color-grey-light-1: #f4fdf6; // Primary color base
@@ -111,7 +112,7 @@ body {
   background-color: $color-primary;
 
   &:hover {
-    background-color: $color-primary-dark;
+    background-color: $color-primary-light-2;
   }
 }
 

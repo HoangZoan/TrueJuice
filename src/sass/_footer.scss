@@ -1,0 +1,54 @@
+.footer {
+  margin-bottom: 12rem;
+
+  &__container {
+    max-width: 120rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__logo {
+    height: 8rem;
+    width: auto;
+    margin-bottom: 2.4rem;
+  }
+
+  &__text {
+    margin-bottom: 8rem;
+  }
+}
+
+.footer-info {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1.5fr repeat(3, 1fr);
+  justify-items: center;
+
+  &__menu {
+  }
+
+  &__heading {
+    font-size: 1.8rem;
+    text-transform: uppercase;
+  }
+
+  &__list {
+    list-style: none;
+  }
+
+  &__item {
+  }
+
+  &__contact-link {
+  }
+
+  &__social {
+    height: 2.4rem;
+    width: 2.4rem;
+  }
+
+  &__item-link {
+  }
+}
