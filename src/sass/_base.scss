@@ -10,6 +10,7 @@
 
 $color-primary: #78e08f;
 $color-primary-light: #a5efb5;
+$color-primary-light-1: #cbf3d4;
 $color-primary-dark: #53cd6e;
 
 $color-grey-light-1: #f4fdf6; // Primary color base
@@ -39,7 +40,7 @@ body {
   color: $text-color;
   font-family: $font-display;
   font-weight: 400;
-  line-height: 1.6;
+  line-height: 1.8;
 }
 
 // Heading - Paragraph
