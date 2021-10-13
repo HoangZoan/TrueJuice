@@ -53,6 +53,10 @@
       border-radius: 3px;
 
       transition: all 0.2s;
+
+      @include respond(1200) {
+        padding: 1rem 1.6rem;
+      }
     }
 
     &::after {
@@ -140,7 +144,7 @@
   &__container {
     max-width: 120rem;
     margin: 0 auto;
-    padding: 18rem 0 12rem;
+    padding: 18rem 6.4rem 12rem;
   }
 
   &__description {

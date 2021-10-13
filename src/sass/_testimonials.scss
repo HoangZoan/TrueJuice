@@ -2,18 +2,32 @@
   background-color: $color-grey-light-2;
 }
 
-.container {
-  max-width: 120rem;
+.section-testimonials .container {
+  padding: $section-space $section-padding;
   margin: 0 auto;
-  padding: 12rem 0;
+
+  @include respond(1200) {
+    padding: 8rem $section-padding;
+  }
+
+  @include respond(1000) {
+    padding: 8rem $section-padding;
+  }
 }
 
 .testimonials {
   display: grid;
   grid-template-columns: 1.5fr 1fr;
   column-gap: 2.4rem;
+  align-items: center;
 
   // Left Column
+
+  &__left-col {
+    display: grid;
+    justify-items: center;
+  }
+
   &__figure {
     position: relative;
     overflow: hidden;
@@ -23,6 +37,10 @@
     width: 100%;
     display: block;
     animation: appear 0.5s;
+  }
+
+  &__img.hidden + &__caption {
+    display: none;
   }
 
   &__caption {
@@ -37,6 +55,11 @@
       rgba(0, 0, 0, 0.55),
       rgba(0, 0, 0, 0.55)
     );
+
+    @include respond(1000) {
+      padding: 1.8rem 3.2rem;
+      font-size: 1.6rem;
+    }
   }
 
   // Right Column
@@ -63,6 +86,10 @@
     background-size: 225%;
     transition: all 0.3s;
     overflow: hidden;
+
+    @include respond(1000) {
+      padding: 1.6rem 3.2rem;
+    }
 
     &::after {
       content: "\201C";
@@ -94,12 +121,23 @@
         grid-template-columns: 7.2rem 1fr;
         font-size: 1.2rem;
         row-gap: 0.5rem;
+
+        @include respond(1000) {
+          grid-template-columns: 5.4rem 1fr;
+          row-gap: 0;
+          margin-top: 2rem;
+        }
       }
 
       &__img {
         height: 5.4rem;
         width: 5.4rem;
         grid-row: 1 / span 2;
+
+        @include respond(1000) {
+          height: 3.6rem;
+          width: 3.6rem;
+        }
       }
 
       &__name {

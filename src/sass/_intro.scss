@@ -1,16 +1,10 @@
-.section-intro {
-  margin: 12rem 0;
-  width: 100%;
-}
-
 .intro {
-  max-width: 120rem;
-  margin: 0 auto;
   display: grid;
   grid-template-columns: 3.5fr 2fr;
   column-gap: 6.4rem;
   row-gap: 3.2rem;
   grid-auto-flow: column dense;
+  align-items: center;
 
   &:not(:last-child) {
     margin-bottom: 3.6rem;

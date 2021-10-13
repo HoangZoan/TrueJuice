@@ -1,0 +1,26 @@
+@mixin respond($breakpoint) {
+  @if $breakpoint == 600 {
+    @media only screen and (max-width: 37.5em) {
+      @content;
+    }
+  } // 600px
+  @if $breakpoint == 900 {
+    @media only screen and (max-width: 56.25em) {
+      @content;
+    }
+  } // 900px
+  @if $breakpoint == 1000 {
+    @media only screen and (max-width: 62.5em) {
+      @content;
+    }
+  } // 1000px
+  @if $breakpoint == 1200 {
+    @media only screen and (max-width: 75em) {
+      @content;
+    }
+  } // 1200px
+}
+
+@mixin colorRed {
+  background-color: red;
+}

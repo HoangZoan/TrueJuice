@@ -23,6 +23,9 @@ $text-color-white: #eee;
 $font-display: "Roboto", sans-serif;
 $font-primary: "Playfair Display", serif;
 
+$section-space: 12rem;
+$section-padding: 4.8rem;
+
 *,
 *::before,
 *::after {
@@ -34,6 +37,10 @@ $font-primary: "Playfair Display", serif;
 html {
   font-size: 62.5%;
   box-sizing: border-box;
+
+  @include respond(1000) {
+    font-size: 56.25%;
+  }
 }
 
 body {
@@ -42,6 +49,20 @@ body {
   font-family: $font-display;
   font-weight: 400;
   line-height: 1.8;
+}
+
+.container {
+  max-width: 120rem;
+  margin: $section-space auto;
+  padding: 0 $section-padding;
+
+  @include respond(1200) {
+    margin: 8rem auto;
+  }
+
+  @include respond(1000) {
+    margin: 8rem auto;
+  }
 }
 
 // Heading - Paragraph
@@ -53,6 +74,10 @@ body {
   line-height: 1.6;
   letter-spacing: 3px;
   text-transform: uppercase;
+
+  @include respond(900) {
+    font-size: 4.8rem;
+  }
 }
 
 .heading-secondary {
@@ -83,6 +108,10 @@ body {
 .paragraph {
   &:not(:last-child) {
     margin-bottom: 1.2rem;
+  }
+
+  @include respond(1000) {
+    font-size: 1.5rem;
   }
 }
 
@@ -167,6 +196,10 @@ body {
     color: $color-primary;
     border-bottom: 1px solid $color-primary;
     transition: all 0.2s;
+
+    @include respond(1000) {
+      font-size: 1.4rem;
+    }
   }
 
   &:hover,
@@ -200,6 +233,10 @@ body {
 
 .margin-b-big {
   margin-bottom: 9rem;
+
+  @include respond(1000) {
+    margin-bottom: 6.4rem;
+  }
 }
 
 // Text
