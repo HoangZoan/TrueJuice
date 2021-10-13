@@ -125,6 +125,10 @@ body {
   padding: 0.8rem 1.8rem;
   border-radius: 2px;
   transition: all 0.2s;
+
+  @include respond(900) {
+    padding: 0.6rem 1.6rem;
+  }
 }
 
 .btn.btn--sub {

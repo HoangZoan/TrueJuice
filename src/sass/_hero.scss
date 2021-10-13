@@ -1,3 +1,18 @@
+.header {
+  position: relative;
+}
+
+.burger-layout {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 50;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(4px);
+}
+
 .header-navigation {
   width: 100%;
   display: flex;
@@ -16,9 +31,15 @@
   }
 
   &__img {
+    display: block;
     width: 20rem;
     height: auto;
     margin-left: 2.4rem;
+
+    @include respond(900) {
+      width: 14rem;
+      padding: 2rem 0;
+    }
   }
 }
 
@@ -27,23 +48,45 @@
     list-style: none;
     display: flex;
     margin-right: 1.2rem;
+
+    @include respond(900) {
+      flex-direction: column;
+      background-color: #fff;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      transform: translateY(100%);
+      width: 100%;
+      align-items: center;
+      box-shadow: 0 1px 3px rgba(#000, 0.1);
+      // display: none;
+    }
   }
 
   &__item {
     position: relative;
+
+    @include respond(900) {
+      width: 100%;
+      border-top: 1px solid #eee;
+    }
   }
 
   &__item:hover &__sub-list {
     opacity: 1;
     pointer-events: visible;
     visibility: visible;
+
+    @include respond(900) {
+      display: none;
+    }
   }
 
   &__link {
     &:link,
     &:visited {
       position: relative;
-      display: inline-block;
+      display: block;
       text-decoration: none;
       color: inherit;
       font-size: 1.6rem;
@@ -56,6 +99,11 @@
 
       @include respond(1200) {
         padding: 1rem 1.6rem;
+      }
+
+      @include respond(900) {
+        margin: 0;
+        text-align: center;
       }
     }
 
@@ -81,6 +129,10 @@
     transform: translateY(3px);
     width: 70%;
     left: 15%;
+
+    @include respond(900) {
+      display: none;
+    }
   }
 
   &__sub-list {
@@ -123,6 +175,10 @@
   width: 2px;
   background-color: $color-primary;
   margin-right: 3.2rem;
+
+  @include respond(900) {
+    display: none;
+  }
 }
 
 .login-box {
@@ -145,6 +201,10 @@
     max-width: 120rem;
     margin: 0 auto;
     padding: 18rem 6.4rem 12rem;
+
+    @include respond(1000) {
+      padding: 12rem 6.4rem 8rem;
+    }
   }
 
   &__description {
