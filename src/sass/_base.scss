@@ -37,6 +37,7 @@ $section-padding: 4.8rem;
 html {
   font-size: 62.5%;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 
   @include respond(1000) {
     font-size: 56.25%;
@@ -53,15 +54,19 @@ body {
 
 .container {
   max-width: 120rem;
-  margin: $section-space auto;
-  padding: 0 $section-padding;
+  margin: 0 auto;
+  padding: $section-space $section-padding;
 
   @include respond(1200) {
-    margin: 8rem auto;
+    padding: 8rem $section-padding;
   }
 
   @include respond(1000) {
-    margin: 8rem auto;
+    padding: 8rem $section-padding;
+  }
+
+  @include respond(1000) {
+    padding: 6rem $section-padding;
   }
 }
 
@@ -133,6 +138,8 @@ body {
 
 .btn.btn--sub {
   border: 2px solid $color-primary;
+  display: flex;
+  align-items: center;
 
   &:hover {
     background-color: $color-primary-dark;
@@ -220,6 +227,10 @@ body {
 // Hidden
 .hidden {
   display: hidden;
+}
+
+.visible {
+  display: block;
 }
 
 // Margin

@@ -2,18 +2,8 @@
   position: relative;
 }
 
-.burger-layout {
-  width: 100%;
-  height: 100vh;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 50;
-  background-color: rgba(0, 0, 0, 0.6);
-  backdrop-filter: blur(4px);
-}
-
 .header-navigation {
+  padding: 0 2.4rem;
   width: 100%;
   display: flex;
   align-items: center;
@@ -25,21 +15,53 @@
   z-index: 100;
 }
 
-.logo {
-  &__link {
-    margin-right: auto;
+.header-left {
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+}
+
+.burger-layout {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 50;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(4px);
+
+  @media only screen and (min-width: 56.25em) {
+    display: none;
   }
+}
 
-  &__img {
-    display: block;
-    width: 20rem;
-    height: auto;
-    margin-left: 2.4rem;
+.burger-btn {
+  margin-right: 3.6rem;
+  fill: $color-primary;
+  align-items: center;
+  border: none;
+  background-color: #fff;
+  display: none;
 
-    @include respond(900) {
-      width: 14rem;
-      padding: 2rem 0;
-    }
+  @include respond(900) {
+    display: flex;
+  }
+}
+
+.burger-logo {
+  height: 2.4rem;
+  width: 2.4rem;
+}
+
+.logo__img {
+  display: block;
+  width: 20rem;
+  height: auto;
+
+  @include respond(900) {
+    width: 14rem;
+    padding: 2rem 0;
   }
 }
 
@@ -59,7 +81,7 @@
       width: 100%;
       align-items: center;
       box-shadow: 0 1px 3px rgba(#000, 0.1);
-      // display: none;
+      display: none;
     }
   }
 
@@ -104,6 +126,7 @@
       @include respond(900) {
         margin: 0;
         text-align: center;
+        padding: 4rem 1.6rem;
       }
     }
 
@@ -182,7 +205,6 @@
 }
 
 .login-box {
-  margin-right: 2.4rem;
   display: flex;
 }
 
@@ -196,6 +218,12 @@
   background-size: cover;
   background-position: bottom;
   color: $text-color-white;
+
+  @include respond(900) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
   &__container {
     max-width: 120rem;

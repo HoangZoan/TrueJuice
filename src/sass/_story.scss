@@ -101,7 +101,11 @@
     &--1 .story__text-box {
       grid-column: 1 / 2;
       grid-row: 1 / 2;
-      padding: 10rem;
+      padding: 6rem;
+
+      @include respond(1200) {
+        padding-right: 0rem;
+      }
 
       @include respond(1000) {
         padding: 6rem;
@@ -122,6 +126,12 @@
 
         @include respond(1000) {
           margin-bottom: 4rem;
+        }
+      }
+
+      .small-link {
+        @include respond(1200) {
+          margin-right: 5rem;
         }
       }
     }
