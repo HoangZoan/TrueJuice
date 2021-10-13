@@ -110,6 +110,7 @@ body {
 
 .btn.btn--primary {
   background-color: $color-primary;
+  color: #fff;
 
   &:hover {
     background-color: $color-primary-light-2;
@@ -118,6 +119,7 @@ body {
 
 .btn.btn--plans {
   background-color: $color-primary-dark;
+  color: #fff;
   padding: 1.2rem 4.2rem;
   position: relative;
   transition: all 0.3s ease-in;
@@ -207,3 +209,15 @@ body {
 
 ///////////////////////////////
 // ANIMATION
+
+@keyframes appear {
+  0% {
+    transform: translateY(10%);
+    opacity: 0.6;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}

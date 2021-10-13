@@ -21,6 +21,7 @@
 
     <link rel="stylesheet" href="src/css/style.css" />
     <script src="https://unpkg.com/phosphor-icons"></script>
+    <script defer src="src/js/script.js"></script>
   </head>
   <body>
     <header class="header">
@@ -235,6 +236,7 @@
                   src="src/img/testimonial-1.png"
                   alt="Khách hàng của True Juice"
                   class="testimonials__img"
+                  data-testimonial="1"
                 />
                 <figcaption class="testimonials__caption">
                   "Lần đầu được dùng nước ép thiên nhiên vậy. Juice ép tươi hoàn
@@ -245,11 +247,12 @@
               </figure>
 
               <!-- Large photo 2 -->
-              <figure class="testimonials__figure hidden">
+              <figure class="testimonials__figure">
                 <img
                   src="src/img/testimonial-2.png"
                   alt="Khách hàng của True Juice"
-                  class="testimonials__img"
+                  class="testimonials__img hidden"
+                  data-testimonial="2"
                 />
                 <figcaption class="testimonials__caption">
                   "Mình thực sự thích những chai nước ép của True Juice từ dịch
@@ -261,11 +264,12 @@
               </figure>
 
               <!-- Large photo 3 -->
-              <figure class="testimonials__figure hidden">
+              <figure class="testimonials__figure">
                 <img
                   src="src/img/testimonial-3.png"
                   alt="Khách hàng của True Juice"
-                  class="testimonials__img"
+                  class="testimonials__img hidden"
+                  data-testimonial="3"
                 />
                 <figcaption class="testimonials__caption">
                   "Tôi có những trải nghiệm tuyệt vời! True Juice hấp dẫn tôi từ
@@ -277,7 +281,7 @@
             </div>
 
             <div class="testimonials__right-col">
-              <figure class="testimonials__card active">
+              <figure data-testimonial="1" class="testimonials__card active">
                 <p class="paragraph">
                   Lần đầu được dùng nước ép thiên nhiên vậy.
                 </p>
@@ -291,7 +295,7 @@
                   <p class="customer__title">Chuyên viên Marketing</p>
                 </div>
               </figure>
-              <figure class="testimonials__card">
+              <figure data-testimonial="2" class="testimonials__card">
                 <p class="paragraph">
                   Đóng gói bao bì thân thiện vào chuyên nghiệp, chất lượng đảm
                   bảo và menu phong phú hợp khẩu vị.
@@ -306,7 +310,7 @@
                   <p class="customer__title">Nội trợ</p>
                 </div>
               </figure>
-              <figure class="testimonials__card">
+              <figure data-testimonial="3" class="testimonials__card">
                 <p class="paragraph">
                   True Juice hấp dẫn tôi từ màu sắc đến vị giác!
                 </p>
