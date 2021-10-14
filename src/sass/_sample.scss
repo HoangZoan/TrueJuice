@@ -3,6 +3,14 @@
   margin: 0 auto;
   display: grid;
   row-gap: 6rem;
+
+  @include respond(900) {
+    width: 75%;
+  }
+
+  @include respond(600) {
+    width: 85%;
+  }
 }
 
 .products-container .small-link {
@@ -18,11 +26,17 @@
   column-gap: 4.8rem;
   padding: 4.8rem;
   border-radius: 3px;
-  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   transition: all 0.3s;
 
   @include respond(1000) {
     padding: 3.2rem;
+  }
+
+  @include respond(900) {
+    grid-template-columns: 1fr;
+    padding: 0;
+    justify-content: center;
   }
 
   &:hover &__overlay {
@@ -31,6 +45,10 @@
 
   &:hover &__img {
     transform: scale(1.05);
+
+    @include respond(900) {
+      transform: scale(1);
+    }
   }
 
   &:hover &__divider,
@@ -53,6 +71,10 @@
     );
     background-size: 225%;
     transition: all 0.5s;
+
+    @include respond(900) {
+      display: none;
+    }
   }
 
   &__img {
@@ -62,6 +84,10 @@
     right: 0;
     z-index: -20;
     transition: all 0.3s;
+
+    @include respond(900) {
+      position: relative;
+    }
   }
 
   &__order {
@@ -74,11 +100,20 @@
     @include respond(1000) {
       row-gap: 1.6rem;
     }
+
+    @include respond(900) {
+      padding: 2.4rem 3.6rem;
+      background-color: $color-grey-light-1;
+    }
   }
 
   &__order .btn {
     margin-top: 2.4rem;
     justify-self: start;
+
+    @include respond(900) {
+      justify-self: center;
+    }
   }
 
   &__info-list {
@@ -106,6 +141,10 @@
     width: 2px;
     opacity: 0;
     transition: all 0.5s;
+
+    @include respond(900) {
+      display: none;
+    }
   }
 
   &__details {
@@ -113,6 +152,10 @@
     align-items: center;
     opacity: 0;
     transition: all 0.5s;
+
+    @include respond(900) {
+      display: none;
+    }
 
     .paragraph {
       color: $text-color-white;

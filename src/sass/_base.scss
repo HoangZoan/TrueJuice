@@ -65,7 +65,7 @@ body {
     padding: 8rem $section-padding;
   }
 
-  @include respond(1000) {
+  @include respond(900) {
     padding: 6rem $section-padding;
   }
 }
@@ -82,6 +82,10 @@ body {
 
   @include respond(900) {
     font-size: 4.8rem;
+  }
+
+  @include respond(600) {
+    font-size: 3.6rem;
   }
 }
 
@@ -226,7 +230,7 @@ body {
 
 // Hidden
 .hidden {
-  display: hidden;
+  display: none;
 }
 
 .visible {
@@ -244,6 +248,10 @@ body {
 
 .margin-b-md {
   margin-bottom: 3.6rem;
+
+  @include respond(600) {
+    margin-bottom: 6rem;
+  }
 }
 
 .margin-b-big {

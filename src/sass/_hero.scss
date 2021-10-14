@@ -208,6 +208,12 @@
   display: flex;
 }
 
+.login-box .btn--sub {
+  @include respond(600) {
+    display: none;
+  }
+}
+
 // Hero
 
 .hero {
@@ -218,6 +224,10 @@
   background-size: cover;
   background-position: bottom;
   color: $text-color-white;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   @include respond(900) {
     display: flex;
@@ -232,6 +242,10 @@
 
     @include respond(1000) {
       padding: 12rem 6.4rem 8rem;
+    }
+
+    @include respond(600) {
+      padding: 12rem 3.6rem 8rem;
     }
   }
 
