@@ -9,7 +9,7 @@
   }
 
   @include respond(600) {
-    width: 85%;
+    width: 100%;
   }
 }
 
@@ -87,6 +87,7 @@
 
     @include respond(900) {
       position: relative;
+      display: block;
     }
   }
 
@@ -102,8 +103,12 @@
     }
 
     @include respond(900) {
-      padding: 2.4rem 3.6rem;
+      padding: 2.4rem 9.6rem;
       background-color: $color-grey-light-1;
+    }
+
+    @include respond(800) {
+      padding: 2.4rem 3.6rem;
     }
   }
 

@@ -538,11 +538,17 @@
 
           <div class="story__layout">
             <figure class="story__item story__item--1">
-              <img
-                src="src/img/our-story-1.jpg"
-                alt=""
-                class="story__photo photo--1"
-              />
+              <picture class="story__photo photo--1">
+                <source
+                  srcset="src/img/our-story-1-small.jpg"
+                  media="(max-width: 56.25em)"
+                />
+                <img
+                  srcset="src/img/our-story-1.jpg"
+                  alt=""
+                  class="story__photo photo--1"
+                />
+              </picture>
 
               <div class="story__text-box box--1">
                 <h4 class="story__heading">
