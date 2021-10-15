@@ -202,6 +202,29 @@ body {
   display: grid;
   grid-template-columns: 1.5fr repeat(3, 1fr);
   justify-items: center; }
+  @media only screen and (max-width: 50em) {
+    .footer-info {
+      grid-template-columns: repeat(3, 1fr);
+      row-gap: 4rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .footer-info {
+      grid-template-columns: 0.8fr;
+      justify-items: start;
+      justify-content: center; } }
+  @media only screen and (max-width: 50em) {
+    .footer-info__menu:first-child {
+      grid-row: 2 / 3;
+      grid-column: 1 / 4; } }
+  @media only screen and (max-width: 37.5em) {
+    .footer-info__menu:first-child {
+      grid-row: 4 / 5;
+      grid-column: 1 / 2; } }
+  @media only screen and (max-width: 50em) {
+    .footer-info__menu:first-child .footer-info__heading {
+      text-align: center; } }
+  @media only screen and (max-width: 37.5em) {
+    .footer-info__menu:first-child .footer-info__heading {
+      text-align: left; } }
   .footer-info__heading {
     font-size: 1.8rem;
     text-transform: uppercase;
@@ -419,7 +442,7 @@ body {
   width: 100%;
   background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../img/hero.jpg);
   background-size: cover;
-  background-position: bottom;
+  background-position: 95% 50%;
   color: #eee;
   display: flex;
   justify-content: center;
