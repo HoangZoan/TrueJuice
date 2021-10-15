@@ -102,7 +102,7 @@
 
     @include respond(800) {
       background-position: 100%;
-      padding: 2rem 4.8rem;
+      padding: 2.4rem 4.8rem;
     }
 
     &::after {
@@ -137,6 +137,17 @@
       opacity: 0.8;
     }
 
+    .paragraph {
+      @include respond(1000) {
+        font-size: 1.6rem;
+      }
+
+      @include respond(800) {
+        font-size: 1.8rem;
+        margin-bottom: 3.2rem;
+      }
+    }
+
     .customer {
       &__box {
         margin-top: 2.8rem;
@@ -144,11 +155,16 @@
         grid-template-columns: 7.2rem 1fr;
         font-size: 1.2rem;
         row-gap: 0.5rem;
+        align-items: center;
 
         @include respond(1000) {
           grid-template-columns: 5.4rem 1fr;
           row-gap: 0;
           margin-top: 2rem;
+        }
+
+        @include respond(800) {
+          column-gap: 1.8rem;
         }
       }
 
@@ -161,10 +177,14 @@
           height: 3.6rem;
           width: 3.6rem;
         }
+
+        @include respond(800) {
+          height: 5.4rem;
+          width: 5.4rem;
+        }
       }
 
       &__name {
-        line-height: 1;
         align-self: end;
       }
 

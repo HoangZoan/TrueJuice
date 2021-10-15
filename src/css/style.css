@@ -452,6 +452,9 @@ body {
       display: flex;
       justify-content: center;
       align-items: center; } }
+  @media only screen and (max-width: 50em) {
+    .hero {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../img/hero-small.jpg); } }
   .hero__container {
     max-width: 120rem;
     margin: 0 auto;
@@ -930,7 +933,7 @@ body {
     @media only screen and (max-width: 50em) {
       .testimonials__card {
         background-position: 100%;
-        padding: 2rem 4.8rem; } }
+        padding: 2.4rem 4.8rem; } }
     .testimonials__card::after {
       content: "\201C";
       font-size: 10rem;
@@ -953,17 +956,28 @@ body {
           box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15); } }
     .testimonials__card.active::after {
       opacity: 0.8; }
+    @media only screen and (max-width: 62.5em) {
+      .testimonials__card .paragraph {
+        font-size: 1.6rem; } }
+    @media only screen and (max-width: 50em) {
+      .testimonials__card .paragraph {
+        font-size: 1.8rem;
+        margin-bottom: 3.2rem; } }
     .testimonials__card .customer__box {
       margin-top: 2.8rem;
       display: grid;
       grid-template-columns: 7.2rem 1fr;
       font-size: 1.2rem;
-      row-gap: 0.5rem; }
+      row-gap: 0.5rem;
+      align-items: center; }
       @media only screen and (max-width: 62.5em) {
         .testimonials__card .customer__box {
           grid-template-columns: 5.4rem 1fr;
           row-gap: 0;
           margin-top: 2rem; } }
+      @media only screen and (max-width: 50em) {
+        .testimonials__card .customer__box {
+          column-gap: 1.8rem; } }
     .testimonials__card .customer__img {
       height: 5.4rem;
       width: 5.4rem;
@@ -972,8 +986,11 @@ body {
         .testimonials__card .customer__img {
           height: 3.6rem;
           width: 3.6rem; } }
+      @media only screen and (max-width: 50em) {
+        .testimonials__card .customer__img {
+          height: 5.4rem;
+          width: 5.4rem; } }
     .testimonials__card .customer__name {
-      line-height: 1;
       align-self: end; }
     .testimonials__card .customer__title {
       align-self: start; }
